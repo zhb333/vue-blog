@@ -1,12 +1,31 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <div class="bg"></div>
   <router-view />
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  components: {},
+  setup() {
+    // todo
+  },
+})
+</script>
+
 <style lang="scss">
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
+  background-image: url('~@/assets/images/bg.jpg');
+  background-position: top;
+  background-size: cover;
+  left: 0;
+  top: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
