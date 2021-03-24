@@ -1,5 +1,6 @@
 <template>
-  <div class="bg"></div>
+  <el-button type="primary" plain>test</el-button>
+  <!-- <div class="bg"></div> -->
   <router-view />
 </template>
 

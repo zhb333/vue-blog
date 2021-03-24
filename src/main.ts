@@ -1,14 +1,15 @@
 import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
-import 'element-plus/lib/theme-chalk/index.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import elementPlusPlugin from '@/plugins/element-plus'
+import './element-variables.scss'
 
 const app = createApp(App)
+
+elementPlusPlugin(app)
 
 app
   .use(store)
   .use(router)
-  .use(ElementPlus)
   .mount('#app')
